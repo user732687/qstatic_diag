@@ -1,0 +1,22 @@
+pipeline:
+  m: 64
+  seed: 7
+  p_min: 0.20
+  p_max: 0.95
+  gamma_min: 0.05
+  gamma_max: 0.40
+  outlier_sigma: 2.0
+  efficiency_threshold: 0.10
+  residual_low: 0.05
+  residual_high: 0.80
+  rho_thresh: 0.85
+  bootstrap_n: 200
+  alpha: 0.05
+  num_seeds: 1
+  device: cpu
+  batch_size: 16
+
+output:
+  dir: ./results/transformer_demo
+  formats: [json, csv, markdown]
+  plots: true
